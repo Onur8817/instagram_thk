@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/Pages/HomePage.dart';
 
 void main() {
   runApp(InstagramApp());
@@ -11,7 +12,9 @@ class InstagramApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: {},
+      routes: {
+        "/" : (context)=> HomePage()
+      },
       initialRoute: "/",
     );
   }
